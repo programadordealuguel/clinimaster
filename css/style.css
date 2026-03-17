@@ -251,6 +251,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 169.231% */
+    border: none;
 }
 
 .btn-verde:hover {
@@ -752,4 +753,319 @@ p {
 
 .icon-valores {
     background-image: url(../images/icon-valores.svg);
+}
+
+.sec-tit-padrao {
+    padding: 22px 0px;
+}
+
+.sec-tit-padrao h1 {
+    text-align: center;
+}
+
+.sec-tit-padrao p {
+    text-align: left;
+}
+
+.cada-exame-lista {
+    border-radius: 10px;
+    background: #C7B07D;
+    display: block;
+    color: #004A33;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 110% */
+    background-image: url(../images/icon-exame-pag.svg);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    padding: 13px 22px 13px 62px;
+    margin-bottom: 15px;
+}
+
+.sec-cta-img .subtit-verde {
+    text-align: left;
+}
+
+.sec-cta-img p {
+    text-align: left;
+}
+
+.sec-cirurgias-pag {
+    background: #004A33;
+    padding: 22px 0px;
+}
+
+.sec-cirurgias-pag .cada-exame-lista {
+    background-color: #fff;
+}
+
+.sec-cirurgias-pag .cada-exame-lista:hover {
+    background-color: #C7B07D;
+}
+
+.tit-corpo-clinico {
+    color: #C9C1AD;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.cada-clinico {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cada-clinico h2 {
+    display: block;
+    color: #004A33;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 104.167% */
+}
+
+.cada-clinico p {
+    color: #0B090A;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.sec-corpo-clinico-pag {
+    margin-bottom: 32px;
+}
+
+.ver-corpo-clinico {
+    padding: 32px 0px;
+}
+
+.ver-corpo-clinico h1 {
+    display: block;
+    color: #004A33;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.ver-corpo-clinico p, .ver-corpo-clinico ul li {
+    color: #0B090A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.ver-corpo-clinico ul li {
+    margin-bottom: 10px;
+}
+
+.ver-corpo-clinico .btn-verde {
+    margin-top: 32px;
+}
+
+.sec-especialidades-pag {
+
+}
+
+.sec-especialidades-pag h2 {
+    color: #004A33;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    text-transform: uppercase;
+}
+
+.sec-especialidades-pag p {
+    margin-bottom: 0px;
+    color: #FFF;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 125% */
+    padding: 22px;
+    text-align: left;
+    display: block;
+}
+
+.cada-especialidade {
+    border-radius: 10px;
+    background: #B09663;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.img-especialidade {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.content-convenios-pag {
+    background-color: #fff;
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px;
+}
+
+.content-convenios-pag .col-xxl-2  {
+    margin-bottom: 30px;
+}
+
+.input-form {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #004A33;
+    background: #FFF;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    height: 35px;
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.input-form::placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.text-form {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #004A33;
+    background: #FFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 120px;
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.text-form::placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.sec-contato-form {
+    margin-bottom: 32px;
+}
+
+.menu-categorias {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.menu-categorias a {
+    display: inline-block;
+    color: #004A33;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    margin: 0px 5px;
+}
+
+.input-busca {
+    width: 100%;
+    border-radius: 17.5px;
+    background: #D9D9D9;
+    height: 35px;
+    padding-left: 15px;
+    color: #808080;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    border: none;
+    margin-top: 20px;
+}
+
+.input-busca::placeholder {
+    color: #808080;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.sec-lista-posts {
+    margin-top: 32px;
+}
+
+.img-post-interna {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.20);
+}
+
+.sec-lista-posts h2 {
+    line-height: 26px;
+    margin-top: 12px;
+}
+
+.sec-lista-posts h2 a {
+    color: #004A33;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.sec-lista-posts p {
+    text-align: left;
+}
+
+.link-cat {
+    border-radius: 18.338px;
+    border: 1px solid #224835;
+    color: #224835;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    padding: 5px 10px;
+    line-height: 20px;
+    margin: 10px 0px;
+}
+
+.img-blog-pag {
+    margin: 0px 0px 30px 0px;
 }
