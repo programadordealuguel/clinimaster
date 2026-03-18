@@ -15,7 +15,7 @@
       <div class="content-convenios-pag">
         <div class="row align-items-center">
           <?php while($query->have_posts()) {  $query->the_post(); ?>
-          <div class="col-xxl-2">
+          <div class="col-6 col-lg-3 col-xxl-2">
             <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="<?php the_title(); ?>">
           </div>
           <?php } ?>

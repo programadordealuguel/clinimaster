@@ -7,58 +7,34 @@
       <div class="row justify-content-center">
         <div class="col-xxl-7">
           <h1 class="tit-verde text-center">Formulário de contato</h1>
-          <form>
-            <input type="text" class="input-form" placeholder="Informe seu nome">
-            <input type="text" class="input-form" placeholder="Informe seu e-mail">
-            <input type="text" class="input-form" placeholder="Informe seu telefone">
-            <textarea class="text-form" placeholder="Mensagem"></textarea>
-            <div class="d-block text-center"><input class="btn-verde" type="submit" value="Enviar"></div>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="7e8aadc" title="Contato"]');?>
         </div>
       </div>
     </div>
   </section>
 
+  <?php $query = new WP_Query( array( 'post_type' => 'unidade' , 'posts_per_page' => 6 ) ); ?>
+  <?php if($query->have_posts()) { ?> 
   <section class="sec-unidades-home">
     <div class="container">
       <h2 class="subtit-verde">Uma Unidade Clinimaster perto de você!</h2>
       <div class="row lista-unidades">
+        <?php while($query->have_posts()) {  $query->the_post(); ?> 
         <div class="col-lg-4">
           <div class="cada-unidade-home">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.984713793314!2d-51.157128!3d-23.3163134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb436735c4858f%3A0x7dedc50fb31edc3f!2sR.%20Esp%C3%ADrito%20Santo%2C%20510%20-%20Centro%2C%20Londrina%20-%20PR%2C%2086010-510!5e0!3m2!1spt-BR!2sbr!4v1772814775645!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <?php echo get_field('iframe_unidade'); ?>
             <div class="content-cada-unidade">
-              <h3>Unidade Londrina</h3>
-              <p>Rua Espírito Santo, 510 – Centro, Londrina – PR.</p>
-              <p>Telefone/WhatsApp: (43) 3324-6837</p>
-              <div class="text-center d-block"><a href="#" class="btn-verde">Ver no mapa</a></div>
+              <h3><?php the_title(); ?></h3>
+              <?php the_content(); ?>
+              <div class="text-center d-block"><a target="_blank" href="<?php echo get_field('link_unidade'); ?>" class="btn-verde">Ver no mapa</a></div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="cada-unidade-home">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.984713793314!2d-51.157128!3d-23.3163134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb436735c4858f%3A0x7dedc50fb31edc3f!2sR.%20Esp%C3%ADrito%20Santo%2C%20510%20-%20Centro%2C%20Londrina%20-%20PR%2C%2086010-510!5e0!3m2!1spt-BR!2sbr!4v1772814775645!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="content-cada-unidade">
-              <h3>Unidade Londrina</h3>
-              <p>Rua Espírito Santo, 510 – Centro, Londrina – PR.</p>
-              <p>Telefone/WhatsApp: (43) 3324-6837</p>
-              <div class="text-center d-block"><a href="#" class="btn-verde">Ver no mapa</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="cada-unidade-home">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.984713793314!2d-51.157128!3d-23.3163134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb436735c4858f%3A0x7dedc50fb31edc3f!2sR.%20Esp%C3%ADrito%20Santo%2C%20510%20-%20Centro%2C%20Londrina%20-%20PR%2C%2086010-510!5e0!3m2!1spt-BR!2sbr!4v1772814775645!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="content-cada-unidade">
-              <h3>Unidade Londrina</h3>
-              <p>Rua Espírito Santo, 510 – Centro, Londrina – PR.</p>
-              <p>Telefone/WhatsApp: (43) 3324-6837</p>
-              <div class="text-center d-block"><a href="#" class="btn-verde">Ver no mapa</a></div>
-            </div>
-          </div>
-        </div>
+        <?php } ?>
       </div>
     </div>
   </section>
+  <?php } wp_reset_postdata(); ?>
 
 </main>
 

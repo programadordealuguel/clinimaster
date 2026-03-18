@@ -7,10 +7,10 @@
       <h1 class="tit-verde"><?php the_title(); ?></h1>
       <div class="content-texto-sobre">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="<?php the_title(); ?>">
+          <div class="col-lg-6 text-center">
+            <img data-src="<?php the_post_thumbnail_url(); ?>" class="img-fluid lazy-image" alt="<?php the_title(); ?>">
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 padding-box-20">
             <?php the_content(); ?>
           </div>
         </div>

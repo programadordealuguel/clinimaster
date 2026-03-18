@@ -43,7 +43,7 @@
     <div class="container">
       <div class="row">
         <?php while ($query->have_posts()) { $query->the_post(); ?>
-        <div class="col-md-4">
+        <div class="col-md-6 col-xl-4">
           <div class="img-post-interna" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"></div>
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <a href="#" class="link-cat">Catarata</a>

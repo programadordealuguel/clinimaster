@@ -22,7 +22,7 @@ $(document).ready(function(){
 		{
 		  breakpoint: 767,
 		  settings: {
-			slidesToShow: 2,
+			slidesToShow: 1,
 			slidesToScroll: 1,
       dots: false, 
 		  }
@@ -60,7 +60,7 @@ $(document).ready(function(){
 		{
 		  breakpoint: 767,
 		  settings: {
-			slidesToShow: 2,
+			slidesToShow: 1,
 			slidesToScroll: 1,
       dots: false, 
 		  }
@@ -98,7 +98,7 @@ $(document).ready(function(){
 		{
 		  breakpoint: 767,
 		  settings: {
-			slidesToShow: 2,
+			slidesToShow: 1,
 			slidesToScroll: 1,
       dots: false, 
 		  }
@@ -108,9 +108,9 @@ $(document).ready(function(){
 		  settings: {
 			slidesToShow: 1,
 			slidesToScroll: 1,
-      dots: false,  
-      arrows: false,
-      infinite: true  
+      		dots: false,  
+      		arrows: false,
+      		infinite: true  
 		  }
 		}
 	  ]
@@ -120,7 +120,7 @@ $(document).ready(function(){
 	  dots: false,
 	  infinite: true,
 	  speed: 300,
-      arrows: true,
+      arrows: false,
 	  slidesToShow: 2,
 	  slidesToScroll: 2,
 	  responsive: [
@@ -138,7 +138,7 @@ $(document).ready(function(){
 		  settings: {
 			slidesToShow: 1,
 			slidesToScroll: 1,
-      dots: false, 
+      		dots: false, 
 		  }
 		},
 		{

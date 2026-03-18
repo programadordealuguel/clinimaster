@@ -10,7 +10,7 @@
           <a target="_blank" href="https://api.whatsapp.com/send?phone=55<?php echo RemoveSpecialChar(get_option('whatsapp')); ?>&text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-verde">Agendar consulta</a>
         </div>
         <div class="col-lg-6">
-          <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="<?php the_title(); ?>">
+          <img data-src="<?php the_post_thumbnail_url(); ?>" class="img-fluid lazy-image" alt="<?php the_title(); ?>">
         </div>
       </div>
     </div>
@@ -20,8 +20,8 @@
     <div class="container">
       <h2 class="subtit-verde"><?php the_field('titulo_clinica_home'); ?></h2>
       <div class="row align-items-center align-items-stretch">
-        <div class="col-xl-6">
-          <img src="<?php the_field('imagem_clinica_home'); ?>" alt="<?php the_field('titulo_clinica_home'); ?>" class="img-fluid">
+        <div class="col-xl-6 text-center">
+          <img data-src="<?php the_field('imagem_clinica_home'); ?>" alt="<?php the_field('titulo_clinica_home'); ?>" class="img-fluid lazy-image">
         </div>
         <div class="col-xl-6 d-flex align-items-center">
           <div class="content-clinica-home">

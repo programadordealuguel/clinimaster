@@ -4,10 +4,10 @@
 
   <section class="sec-tit-padrao">
     <div class="container">
-      <h1 class="tit-verde">Página não encontrada - Erro 404</h1>
+      <h1 class="tit-verde"><?php the_title(); ?></h1>
       <div class="row align-items-center">
         <div class="col-12 text-format">
-          <p class="d-block text-center">A página que você está procurando não existe. Verifique se digitou o endereço correto ou utilize o menu para continuar navegando.</p>
+          <?php the_content(); ?>
         </div>
       </div>
       

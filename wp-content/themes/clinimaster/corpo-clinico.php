@@ -36,9 +36,9 @@
     <div class="container">
       <div class="row">
         <?php while($query->have_posts()) {  $query->the_post(); ?>
-        <div class="col-xxl-4">
+        <div class="col-md-6 col-lg-4">
           <div class="cada-clinico">
-            <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="title">    
+            <img data-src="<?php the_post_thumbnail_url(); ?>" class="img-fluid lazy-image" alt="title">    
             <h2><?php the_title(); ?></h2>
             <p><?php the_field('especialidade_equipe'); ?></p>
             <p><?php the_field('crmrqe'); ?></p>

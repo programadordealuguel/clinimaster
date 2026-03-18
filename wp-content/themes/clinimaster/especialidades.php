@@ -19,7 +19,7 @@
     <div class="container">
       <div class="row">
         <?php while($query->have_posts()) {  $query->the_post(); ?>
-        <div class="col-xl-4">
+        <div class="col-lg-6 col-xl-4">
           <h2><?php the_title(); ?></h2>
           <div class="cada-especialidade">
             <div class="img-especialidade" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"></div>  
